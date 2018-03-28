@@ -50,9 +50,10 @@ body{
   position: absolute;
   left: 0;
   text-align: center;
-  bottom:-15px;
+  bottom:0%;
   width: 100%;
   z-index:2;
+  margin: 0 0;
 }
 .swiper-pagination-switch {
   display: inline-block;
@@ -71,7 +72,7 @@ body{
 /* 内容分栏 */
 .content{
   max-width: 450px;
-  margin: 0 auto;
+  margin: -1% auto;
 }
 .fenlan{
   width: 33%;
@@ -86,7 +87,7 @@ body{
   margin-left: 1px;
 }
 .fenlan img{
-  width: 100%;
+  width: 95%;
   height: 100%;
   margin: 0 auto;
 }
@@ -95,21 +96,23 @@ body{
   float: left;
   width: 100%;
   height:30px;
+  color: #B0B0B0;
+  line-height: 30px;
+  font-size: 12px;
 }
 .icon-point-right{
-  margin-left: 5px;
+  margin-left: 2%;
 }
 .contentTwo{
-  width: 49%;
+  width: 50%;
   height: 80px;
   line-height: 80px;
   background: #fff;
   text-align: center;
   color: #00000;
   float: left;
-  margin: 1px 0 0 1px;
   font-size: 15px;
-  box-shadow: -1px 1px 1px gray;
+  box-shadow: 0 -1px 1px #B0B0B0;
 }
 
 /* 模态框 */
