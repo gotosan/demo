@@ -21,7 +21,7 @@ body{
   background: rgb(241,244,251);
 }
 /* 轮播图 */
-.device {
+/* .device {
   width: 100%;
   height: 200px;
   margin: 5px auto;
@@ -61,8 +61,7 @@ body{
 }
 .swiper-active-switch {
   background: #fff;
-}
-
+} */
 /* 内容分栏 */
 .content{
   max-width: 450px;
@@ -79,6 +78,22 @@ body{
   position: relative;
   font-size: 20px;
   margin-left: 1px;
+  position: relative;
+}
+.fenlan span{
+  display: block;
+  position: absolute;
+  left: 22%;
+  top: -22%;
+  z-index: 100;
+  font-size: 17px;
+}
+.fenlan .fenlan-icon{
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: -27px;
+  z-index: 1;
 }
 .fenlan img{
   width: 100%;
