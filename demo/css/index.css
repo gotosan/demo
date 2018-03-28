@@ -1,6 +1,6 @@
 .logo{
   max-width: 450px;
-  height: 60px;
+  height: 73.5px;
   background: #fff;
   margin: 0 auto;
 }
@@ -80,7 +80,7 @@ body{
   margin-left: 1px;
   position: relative;
 }
-.fenlan span{
+.fenlan p{
   display: block;
   position: absolute;
   left: 22%;
