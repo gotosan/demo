@@ -122,6 +122,28 @@ body{
   left: 50%;
   transform: translateX(-50%)translateY(-25%);
 }
+/* 模态框图标设置 */
+.icon-users{
+  font-size: 45px;
+  margin: 15px;
+}
+.modal-content .modal-body{
+  position: relative;
+}
+.modal-content .modal-body h4{
+  display: block;
+  width: 70px;
+  position:absolute;
+  left: 10%;
+  top: 10%;
+}
+.modal-content .modal-body p{
+  display: block;
+  width: 70px;
+  position:absolute;
+  left: 10%;
+  top: 10%;
+}
 /* 尾部 */
 .footer{
   max-width: 450px;
