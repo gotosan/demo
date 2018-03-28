@@ -16,12 +16,6 @@
   float: right;
   margin-right: 2%;
 }
-.head{
-  max-width: 450px;
-  height:50px;
-  background: pink;
-  margin: 0 auto;
-}
 body{
   /* background: rgb(255,251,240); */
   background: rgb(241,244,251);
@@ -124,25 +118,34 @@ body{
 }
 /* 模态框图标设置 */
 .icon-users{
-  font-size: 45px;
+  position: absolute;
+  left: -5px;
+  top: 3px;
+  font-size: 30px;
   margin: 15px;
 }
+.icon-user{
+  position: absolute;
+  left: -5px;
+  top: 3px;
+  font-size: 30px;
+  margin: 15px;
+}
+
 .modal-content .modal-body{
   position: relative;
+  border-bottom: 1px solid #B0B0B0;
+}
+.modal-content .modal-body .icon-title{
+    padding-left: 25%;
 }
 .modal-content .modal-body h4{
-  display: block;
-  width: 70px;
-  position:absolute;
-  left: 10%;
-  top: 10%;
+  font-size: 17px;
+  color: #333;
 }
 .modal-content .modal-body p{
-  display: block;
-  width: 70px;
-  position:absolute;
-  left: 10%;
-  top: 10%;
+  margin-top: 2px;
+  font-size: 10px;
 }
 /* 尾部 */
 .footer{

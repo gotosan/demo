@@ -26,6 +26,7 @@
 
 .icon-user:before {
   content: "\e971";
+  color: pink;
 }
 .icon-users:before {
   content: "\e972";
