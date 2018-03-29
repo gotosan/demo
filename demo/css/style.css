@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('../fonts/icomoon.eot?2sr5wg');
-  src:  url('../fonts/icomoon.eot?2sr5wg#iefix') format('embedded-opentype'),
-    url('../fonts/icomoon.ttf?2sr5wg') format('truetype'),
-    url('../fonts/icomoon.woff?2sr5wg') format('woff'),
-    url('../fonts/icomoon.svg?2sr5wg#icomoon') format('svg');
+  src:  url('../fonts/icomoon.eot?ae3riy');
+  src:  url('../fonts/icomoon.eot?ae3riy#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?ae3riy') format('truetype'),
+    url('../fonts/icomoon.woff?ae3riy') format('woff'),
+    url('../fonts/icomoon.svg?ae3riy#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -24,6 +24,18 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-home3:before {
+  content: "\e902";
+  color: pink;
+}
+.icon-cart:before {
+  content: "\e93a";
+  color: pink;
+}
+.icon-envelop:before {
+  content: "\e945";
+  color: pink;
+}
 .icon-user:before {
   content: "\e971";
   color: pink;
@@ -32,6 +44,11 @@
   content: "\e972";
   color: pink;
 }
+.icon-brightness-contrast:before {
+  content: "\e9d6";
+  color: pink;
+}
 .icon-point-right:before {
   content: "\ea04";
+  color: pink;
 }
