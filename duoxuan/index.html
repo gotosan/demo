@@ -597,15 +597,14 @@
             var oli= $('.store').children('ul').children('li');
             var index = $(this).index();
              console.log(index);
-             oli.eq(index).css("background", "red");
-            oli.eq(index).find('.content_gd').click(function () {
-             oli.eq(index).find('content_xx').slideDown(200).siblings(".product").children(".content_gd").hide().siblings(".content_sq").show();
-        });
-        $("li").eq(index).find('.content_sq').click(function () {
-            $("li").eq(index).find('.content_xx').slideUp(200).siblings(".product").children(".content_sq").css('display', 'none').siblings(".content_gd").css('display', 'block');
-        });
-
-            
+            //  oli.eq(index).css("background", "red");
+            oli.eq(index).find('.content_gd').click(function (){
+             oli.eq(index).find('.content_xx').slideDown(200).siblings(".product").children(".content_gd").css('display', 'none').siblings(".content_sq").css('display', 'block');
+            });
+             oli.eq(index).find('.content_sq').click(function(){
+                 oli.eq(index).find('.content_xx').slideUp(200).siblings(".product").children(".content_sq").css('display', 'none').siblings(".content_gd").css('display', 'block');  
+             })
+ 
     });
 
     // $('.content_gd').click(function(){ 
