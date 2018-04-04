@@ -41,6 +41,7 @@
                     <span>总价：￥</span><b class="product-one-price color_red">4280</b>
                 </div>
                 <div class="content_gd">详细内容<span class="glyphicon glyphicon-menu-down"></span></div>
+                <div class="content_sq">收起<span class="glyphicon glyphicon-menu-up"></span></div>
             </div>
             <div class="content_xx content_none">
                  <ul>
@@ -252,9 +253,10 @@
     //     }
     // })
  $('.content_gd').click(function(){ 
-     $('.content_xx').slideDown(200);});
-// $('.content_gd').click(function(){ $('.content_xx').slideDown(200);
-// })
+    $('.content_xx').slideDown(200).siblings(".product").children(".content_gd").css('display','none').siblings(".content_sq").css('display','block');});
+ $('.content_sq').click(function(){
+    $('.content_xx').slideUp(200).siblings(".product").children(".content_sq").css('display','none').siblings(".content_gd").css('display','block');});
+
 
 </script>
 </body>
