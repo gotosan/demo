@@ -593,20 +593,20 @@
         $(".total-price").text(allprice.toFixed(2)); //输出全部总价
     }
 
-
     $('.store').children('ul').children('li').click(function(){
+            var oli= $('.store').children('ul').children('li');
             var index = $(this).index();
              console.log(index);
-            $("li").eq(2).css("display","none");
-            // .children('.content-width>conten_gd').click(function () {
-            // $("li").eq(index).children('.content-width>conten_xx').slideDown(200).siblings(".product").children(".content_gd").css('display', 'none').siblings(".content_sq").css('display', 'block');
+             oli.eq(index).css("background", "red");
+            oli.eq(index).find('.content_gd').click(function () {
+             oli.eq(index).find('content_xx').slideDown(200).siblings(".product").children(".content_gd").hide().siblings(".content_sq").show();
         });
-        // $("li").eq(index).find('.content_sq').click(function () {
-        //     $("li").eq(index).find('.content_xx').slideUp(200).siblings(".product").children(".content_sq").css('display', 'none').siblings(".content_gd").css('display', 'block');
-        // });
+        $("li").eq(index).find('.content_sq').click(function () {
+            $("li").eq(index).find('.content_xx').slideUp(200).siblings(".product").children(".content_sq").css('display', 'none').siblings(".content_gd").css('display', 'block');
+        });
 
             
-    // })
+    });
 
     // $('.content_gd').click(function(){ 
     //     $('.content_xx').slideDown(200).siblings(".product").children(".content_gd").css('display','none').siblings(".content_sq").css('display','block');});
