@@ -2,6 +2,9 @@
     max-width: 450px;
     margin: 0 auto;
 }
+body{
+        background:#F0F8FF;
+}
 /* 头部栏 */
 .head_title{
     width:100%;
@@ -15,13 +18,14 @@
 }
 .content-width{
     width:100%;
-    border-top: 1px solid palevioletred;
+    border-bottom: 1px solid palevioletred;
     margin: 0 auto;
 }
 .store{
-    width: 100%;
+    width: 96%;
     height:1000%;
     margin: 0 auto;
+    background: #fff !important;
 }
 .store>div:nth-child(1),
 .store>div:nth-child(3),
@@ -38,6 +42,7 @@
 }
 .product{
     position: relative;
+    padding: 1%;
 }
 .product>input[type='checkbox'] {
     opacity: 1;
@@ -59,7 +64,7 @@
      margin: 0 5px;
 }
 .span_title{
-    font-size: 16px;
+    font-size: 20px;
     margin-left: 8%;
 }
 .product-one-price{
@@ -68,7 +73,7 @@
 .product-price{
     display:block;
     width: 40%;
-    margin-left: 8%;
+    margin-left: 13%;
 }
 .content_gd{
     position: absolute;
@@ -87,10 +92,12 @@
 .ul_content{
     font-size: 10px !important;
     color:#B0B0B0 !important;
+    margin-left: 10%;
 }
 .li_title{
     font-size: 16px;
     color: palevioletred;
+    margin-left: 12%;
 }
 .content_none{
     display:none;
