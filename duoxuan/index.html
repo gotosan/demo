@@ -582,7 +582,7 @@
             $(this).find(".product-check").each(function () { 
                 if ($(this).is(":checked")) { //如果该商品被选中
                     var price = parseFloat($(this).parents(".product").find(".product-one-price").text()); //得到单价
-                    console.log(price);
+                    // console.log(price);
                     oprice += price;
                 $(this).closest(".store").find(".store-total-price").text(oprice.toFixed(2));
                 }
@@ -596,7 +596,7 @@
     $('.store').children('ul').children('li').click(function(){
             var oli= $('.store').children('ul').children('li');
             var index = $(this).index();
-             console.log(index);
+            //  console.log(index);
             //  oli.eq(index).css("background", "red");
             oli.eq(index).find('.content_gd').click(function (){
              oli.eq(index).find('.content_xx').slideDown(200).siblings(".product").children(".content_gd").css('display', 'none').siblings(".content_sq").css('display', 'block');
@@ -606,11 +606,6 @@
              })
  
     });
-
-    // $('.content_gd').click(function(){ 
-    //     $('.content_xx').slideDown(200).siblings(".product").children(".content_gd").css('display','none').siblings(".content_sq").css('display','block');});
-    // $('.content_sq').click(function(){
-    //     $('.content_xx').slideUp(200).siblings(".product").children(".content_sq").css('display','none').siblings(".content_gd").css('display','block');});
 
 
 </script>
