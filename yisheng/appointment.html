@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge,chrome=1">
+    <meta name="render" content="webkit">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <title>医生预约</title>
+    <link rel="stylesheet" href="./css/appointment.css">
+    <link rel="stylesheet" href="css/base2.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/jquery-ui.css">
+</head>
+<body>
+    <header>
+        <span>预约</span>
+        <a href="#">
+            <i class="glyphicon glyphicon-chevron-left"></i>
+        </a>
+    </header>
+    <main>
+        <div class="doctor_img">
+                <img src="img/1.jpg"/>
+        </div>
+
+        <div class="doctor_name">
+            <p><strong>宋绿茵</strong>
+<!--               主任医师&nbsp;&nbsp;教授-->
+            </p>
+            
+        </div>
+        <div class="doctor_main">
+            <p>
+                硕士研究生导师<br>
+                心血管内科及心血管超声学科带头人<br>
+                原广东省人民医院心脏病研究所资深专家<br><br>
+                
+            </p>
+        </div>
+                <div class="doctor_tc">
+                <p>
+                <strong>特长:</strong><br>
+                胡群峰主任是热疗联合治疗进展期肿瘤学者之一，从事肿瘤临床工作近40年，研究团队共有博士12人，研究生25人。对多种中晚期恶性肿瘤的诊治积累了丰富的临床经验，尤其擅长对肺癌、鼻咽癌、胃癌、肠癌、宫颈癌、淋巴瘤等的诊治。胡主任在1997年—1999作为出国留学人员留学日本肿瘤研究所进修安全无创全身热疗技术，学习各国治疗肿瘤的长处后回国开展利用国际第五代治癌技术热疗联合治疗的项目，打开国内肿瘤治疗新的局面。
+
+            </p>
+        </div>
+        <div class="doctor_date">
+            <input type="button" id="date" value="选择预约日期">
+            <span class="doctor_date_yuyue">已经有10000个人预约</span>
+        </div>
+    </main>
+    <footer>
+        <input  type="button" value="确定预约"/>
+    </footer>
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script>
+        $("#date").datepicker();
+    </script>
+</body>

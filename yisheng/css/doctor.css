@@ -2,13 +2,63 @@
     max-width:450px;
     margin: 0 auto;
 }
+body{
+    background:  #f1dde8;
+}
 header{
     width:100%;
     height:40px;
     background:palevioletred;
     color:#fff;
 }
-header h3{
+header h2{
     text-align: center;
     line-height: 40px;
+}
+main{
+    width:100%;
+    height:1000px;
+    background:#fff;
+}
+main ul{
+    width:95%;
+    margin:10px auto;
+}
+main li{
+    width:90%;
+    padding:10px;
+    border:2px solid pink;
+    border-radius:10px;
+    margin-top:10px;
+}
+main .doctor_img{
+    display:inline-block;
+    width:28%;
+    height:123px;
+    background:#3425;
+    border-radius:5px;
+    box-shadow: 1px 1px 5px #b0b0b0;
+}
+main .doctor_profile{
+    display:inline-block;
+    width: 70%;
+    float:right;
+}
+main .doctor_profile p strong{
+    color:palevioletred;
+}
+main .doctor_strength{
+    display:inline-block;
+    width: 70%;
+    float:right;
+}
+.yuyue_btn{
+    border:0;
+    border-radius:2px;
+    color:#fff;
+    background:palevioletred;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction:row-reverse;
+    justify-content: flex-end;
 }

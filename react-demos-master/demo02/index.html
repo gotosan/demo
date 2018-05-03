@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="../build/react.js"></script>
+    <script src="../build/react-dom.js"></script>
+    <script src="../build/browser.min.js"></script>
+    <script src="https://cdn.bootcss.com/jquery/2.1.4/jquery.min.js"></script>
+  </head>
+  <body>
+    <div id="example"></div>
+    <script type="text/babel">
+//      var names = ['Alice', 'Emily', 'Kate'];
+//
+//      ReactDOM.render(
+//        <div>
+//        {
+//          names.map(function (name, index) {
+//            return <div key={index}>Hello, {name}!</div>
+//          })
+//        }
+//        </div>,
+//        document.getElementById('example')
+//      );
+//    var names=['111','222','22233'];
+//        ReactDOM.render(
+//            <div>
+//                {
+//                    names.map(function(name,index){
+//                        return <div key={index}>hello,{name}!</div>
+//                            
+//                    })
+//                    
+//
+//                }
+//
+//        </div>,
+//            document.getElementById("example")
+//        );
+//        var names=["sdd","ssss","eeeee"];
+//            ReactDOM.render(
+//                <div>
+//                {
+//                             names.map(function(name,index){
+//                                return <div key={index}>hello,{name}!</div>
+//                            })
+//                    }
+//                    
+//        </div>,
+//                document.getElementById("example")
+//            )
+//    ReactDOM.render(
+//        <div>
+//            <h1>hello world</h1>
+//            <h2>hhhh</h2>
+//        </div>,
+//        document.getElementById("example")
+//        
+//    )
+//    var HelloMessage=React.createClass({
+//        render:function(){
+//            return <h1>hello world</h1>
+//        }
+//    });
+//
+//    ReactDOM.render(
+//        <HelloMessage/>,
+//        document.getElementById('example')
+//    )
+//    var HelloMessage=React.createClass({
+//        render:function(){
+//            return <h1>hello {this.props.name}</h1>;
+//        }
+//    });
+//    ReactDOM.render(
+//        <HelloMessage name="Runoob"/>,
+//        document.getElementById("example")
+//    )
+//    var WebSite=React.createClass({
+//        render:function(){
+//            return(
+//                <div>
+//                    <Name name={this.props.name}/>
+//                    <link site={this.props.site}/>
+//                </div>
+//            );
+//        }
+//    });
+//    var Name=React.createClass({
+//        render:function(){
+//            return(
+//                <h1>{this.props.name}</h1>
+//            );
+//        }
+//    });
+//    var Link=React.createClass({
+//        render:function(){
+//            return(
+//                <a href={this.props.site}>
+//                    {this.props.site}
+//                </a>
+//            );
+//        }
+//    });
+//    ReactDOM.render(
+//        <Name name="hello react" site="bbb"/>,
+//        document.getElementById('example')
+//    );
+//    var LikeButton=React.createClass({
+//        getInitialState:function(){
+//            return {liked:false};
+//        },
+//        handleClick:function(event){
+//            this.setState({liked:!this.state.liked});
+//        },
+//        render:function(){
+//            var text=this.state.liked?'like':'dont like';
+//            return (
+//                <p onClick={this.handleClick}>你{text}我</p>
+//            );
+//        }
+//    });
+//
+//    ReactDOM.render(
+//        <LikeButton/>,
+//        document.getElementById('example')
+//    );
+//    var HelloMessage =React.createClass({
+//        render:function(){
+//            return<h1>Hello{this.props.name}</h1>;
+//        }
+//    });
+//    ReactDOM.render(
+//        <HelloMessage name="Runoob"/>,
+//        document.getElementById('example')
+//    )
+//    var HelloMessage=React.createClass({
+//        getDefaultProps:function(){
+//            return{
+//                name:'Runoob'
+//            };
+//        },
+//        render:function(){
+//            return <h1>Hello{this.props.name}</h1>;
+//        }
+//    });
+//    ReactDOM.render(
+//        <HelloMessage />,
+//        document.getElementById('example')
+//    )
+//    var WebSite=React.createClass({
+//        getInitialState:function(){
+//            return{
+//                name:"hello",
+//                site:"react"
+//            };
+//        },
+//        render:function(){
+//            return(
+//                <div>
+//                    <Name name={this.state.name} />
+//                    <Link site={this.state.site} />
+//                </div>
+//            );
+//        }
+//    });
+//    var Name =React.createClass({
+//        render:function(){
+//            return(
+//                <h1>{this.props.name}</h1>
+//            );
+//        }
+//    });
+//    var Link=React.createClass({
+//        render:function() {
+//        return(
+//        <a href={this.props.site}>
+//            {this.props.site}
+//        </a>);
+//    } 
+//    });
+//    ReactDOM.render(
+//        <WebSite />,
+//        document.getElementById('example')
+//    )
+ 
+//    var title="react!";
+//    var MyTitle=React.createClass({
+//        propTypes:{
+//            title:React.PropTypes.string.isRequired,
+//        },
+//        render:function(){
+//            return <h1>{this.props.title}</h1>;
+//    });
+//    ReactDOM.render(
+//        <MyTitle title={title}/>,
+//        document.getElementById('example')
+//    )
+
+
+//    var Counter= React.createClass({
+//        getInitialState:function(){
+//            return {clickCount:0};
+//        },
+//        handleClick:function(){
+//            this.setState(function(state){
+//                return {clickCount:state.clickCount+1}
+//            });
+//        },
+//        render:function(){
+//            return(<h2 onClick={this.handleClick}>点我！次数为：{this.state.clickCount}</h2>);
+//        }
+//    });
+//    ReactDOM.render(
+//        <Counter />,
+//        document.getElementById('example')
+//    )
+
+//        var Counter=React.createClass({
+//            getInitialState:function(){
+//                return {clickCount:0};
+//            },
+//            handleClick:function(){
+//                this.setState(function(state){
+//                    return{clickCount:state.clickCount+1};
+//                });
+//            },
+//            render:function(){
+//                return(<h2 onClick={this.handleClick}>点我！次数为：{this.state.clickCount}</h2>);
+//            }
+//        });
+//     
+//    ReactDOM.render(
+//        <Counter />,
+//        document.getElementById('example')
+//    )
+
+//      var Hello=React.createClass({
+//          getInitialState:function(){
+//          return{
+//          opacity:1.0
+//        };
+//      },
+//        componentDidMount:function(){
+//            this.timer=setInterval(function(){
+//                var opacity=this.state.opacity;
+//                opacity -=.5;
+//                if(opacity<0.1){
+//                    opacity=1.0;
+//                }
+//                this.setState({
+//                    opacity
+//                });
+//            }.bind(this),100);
+//      },
+//          render:function(){
+//              return(
+//                    <div style={{opacity:this.state.opacity}}>
+//                        Hello{this.props.name}
+//                    </div>
+//              )
+//          }
+//      });
+//    ReactDOM.render(
+//        <Hello name="world"/>,
+//        document.getElementById('example')
+//    )
+
+//    var Hello=React.createClass({
+//        getInitialState:function(){
+//            return{
+//                opacity:1.0
+//            };
+//        },
+//        componentDidMount:function(){
+//            this.timer=setInterval(function(){
+//                var opacity=this.state.opacity;
+//                opacity-=.5;
+//                if(opacity<0.1){
+//                    opacity=1.0;
+//                }
+//                this.setState({
+//                    opacity:opacity
+//                });
+//            }.bind(this),100);
+//        },
+//        render:function(){
+//            return(
+//                <div style={{opacity:this.state.opacity}}>
+//                    Hello {this.props.name}
+//                </div>
+//            );
+//        }
+//    });
+//        ReactDOM.render(
+//            <Hello name="world"/>,
+//            document.getElementById("example")
+//        )
+
+//    var Button=React.createClass({
+//        getInitialState:function(){
+//            return{
+//                data:0
+//            };
+//        },
+//        setNewNumber:function(){
+//            this.setState({data:this.state.data+1})
+//        },
+//        render:function(){
+//            return(
+//                <div>
+//                    <button onClick={this.setNewNumber}>INCREMENT</button>
+//                    <Content myNumber={this.state.data}></Content>
+//                </div>
+//            );
+//        }
+//    })
+//    var Content=React.createClass({
+//        componentWillMount:function(){
+//            console.log("Component WILL NOUNT")
+//        },
+//        componentDidMount:function(){
+//            console.log("")
+//        }
+//    })
+    
+//        var UserGist=React.createClass({
+//            getInitialState:function(){
+//                return{
+//                    username:'',
+//                    lastGistUrl:''
+//                };
+//            },
+//            componentDidMount:function(){
+//                this.serverRequest=$.get(this.props.source,function(result){
+//                    var lastGist=result[0];
+//                    this.setState({
+//                        username:lastGist.owner.login,
+//                        lastGistUrl:lastGist.html_url
+//                    })
+//                }.bind(this));
+//            },
+//            componentWillUnmount:function 
+//                this.serverRequest.about();
+//            },
+//            render:function(){
+//                return(
+//                    <div>
+//                        {this.state.username} 百度地址：
+//                        <a href={this.state.lastGistUrl}>{this.state.lastGistUrl}</a>
+//                    </div>
+//                );
+//            }
+//            });
+//         ReactDOM.render(
+//            <UserGist source="http://api.github.com/users/octocat/gists"/>,
+//             document.getElementById('example')
+//         )
+        
+//        var HelloMessage=React.createClass({
+//            getInitialState:function(){
+//                return{value:"Hello Runoob!"};
+//            },
+//            handleChange:function(){
+//                this.setState({value:event.target.value});
+//            },
+//            render:function(){
+//                var value=this.state.value;
+//                return <div>
+//                            <input type="text" value={value} onChange={this.handleChange}/>
+//                            <h4>{value}</h4>
+//                        </div>
+//            }
+//        });
+//        ReactDOM.render(
+//            <HelloMessage/>,
+//            document.getElementById('example')
+//        )
+//        var HelloMessage=React.createClass({
+//            getInitialState:function(){
+//                return{value:'Hello Runoob!'};
+//            },
+//         handleChange:function(event){
+//                this.setState({value:event.target.value});
+//            },
+//            render:function(){
+//                var value=this.state.value;
+//                return <div>
+//                            <input type="text" value={value} onChange={this.handleChange}/>
+//                            <h4>{value}</h4>
+//                        </div>;
+//            }
+//        });
+//        ReactDOM.render(
+//            <HelloMessage/>,
+//            document.getElementById('example')
+//        )
+//    var HelloMessage=React.createClass({
+//        getInitialState:function(){
+//            return{
+//                value:"hello react"
+//            };
+//        },
+//        handleChange:function(event){
+//        this.setState({value:'heihei'})
+//    },
+//        render:function(){
+//            return  <div onClick={this.handleChange}>{this.state.value}</div>;
+//        }
+//    });
+//    ReactDOM.render(
+//        <HelloMessage />,
+//        document.getElementById('example')
+//    )
+
+//    var Content=React.createClass({
+//        render:function(){
+//            return <div>
+//                        <button onClick={this.props.updateStateProp}>点我</button>
+//                        <h4>{this.props.myDataProp}</h4>
+//                    </div>;
+//        }
+//    
+//    });
+//    var HelloMessage=React.createClass({
+//        getInitialState:function(){
+//            return{value:'777777'};
+//        },
+//        handleChange:function(event){
+//            this.setState({value:'7777776666'});
+//        },
+//        render:function(){
+//            var value=this.state.value;
+//            return <div><Content myDataProp={value}
+//                updateStateProp={this.handleChange}></Content></div>;
+//        }
+//    });
+//    ReactDOM.render(
+//        <HelloMessage/>,
+//        document.getElementById('example')
+//    )
+    var MyComponent =React.createClass({
+        handleClick:function(){
+            this.refs.myInput.focus();
+        },
+        render:function(){
+            return(
+                <div>
+                    <input type="text" ref="myInput"/>
+                    <input type="button" value="点击获取焦点" onClick={this.handleClick}/>
+                </div>
+            );
+        }
+    });
+    ReactDOM.render(
+        <MyComponent/>,
+        document.getElementById('example')
+    )
+    </script>
+    </body>  
+</html>
